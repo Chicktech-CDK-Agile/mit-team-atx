@@ -10,7 +10,7 @@ angular.module('myApp', ['ngRoute', 'ui.bootstrap', 'ui.bootstrap.tpls', 'ui.boo
         $routeProvider.when('/featured', {templateUrl: 'app/partials/featured.html', controller: 'FeaturedCtrl'});
         $routeProvider.when('/offers', {templateUrl: 'app/partials/offers.html', controller: 'OffersCtrl'});
         $routeProvider.when('/accessories', {templateUrl: 'app/partials/accessories.html', controller: 'AccessoriesCtrl'});
-        $routeProvider.when('/partsandservice', {templateUrl: 'app/partials/parts-service.html', controller: 'PartsAndServiceCtrl'});
+        $routeProvider.when('/parts-service', {templateUrl: 'app/partials/parts-service.html', controller: 'PartsAndServiceCtrl'});
         $routeProvider.otherwise({redirectTo: '/home'});
     }])
     .constant('CONFIGURL', 'https://resplendent-fire-8954.firebaseio.com')
