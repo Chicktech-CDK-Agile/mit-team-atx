@@ -10,17 +10,66 @@
             <input type="text" class="form-control search-bar" placeholder="Date" aria-describedby="service-date">
         </div>
     </div>
+
     <div class="col-lg-6">
         <h4>Enter Service Reason</h4>
         <div class="input-group col-lg-12">
             <input type="text" class="form-control search-bar" placeholder="What seems to be the problem?" aria-describedby="service-reason">
         </div>
     </div>
-</div>
+
+    <div class="col-lg-6">
+        <h4>Enter Make of Car</h4>
+        <div class="input-group col-lg-12">
+            <input type="text" class="form-control search-bar" placeholder="Make" aria-describedby="service-make">
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <h4>Enter Model of Car</h4>
+        <div class="input-group col-lg-12">
+            <input type="text" class="form-control search-bar" placeholder="Model" aria-describedby="service-model">
+        </div>
+    </div>
+
+    <div style="margin-bottom: 20px;" class="col-lg-6">
+        <h4>Enter Year of Car</h4>
+        <div class="input-group col-lg-12">
+            <input type="text" class="form-control search-bar" placeholder="Year of car" aria-describedby="service-year">
+        </div>
+    </div>
+
+    <div style="margin-bottom: 20px;" class="col-lg-6">
+        <h4>Enter Vehicle Identification Number of Car</h4>
+        <div class="input-group col-lg-12">
+            <input type="text" class="form-control search-bar" placeholder="VIN" aria-describedby="service-VIN">
+        </div>
+    </div>
+
+    <div class=""col-lg-6">
+    <h4>Desired Services</h4>
+        <input type="checkbox" aria-describedby="service-oil" value="Bike"> I need an oil change<br>
+        <input type="checkbox" aria-describedby="service-5K" value="Car"> I need 5K mileage service<br>
+        <input type="checkbox" aria-describedby="service-recall" value="Car"> I found out about a factory recall<br>
+    </div>
+
+    <div class="col-lg-6">
+        <h4>Name</h4>
+        <div class="input-group col-lg-12">
+            <input type="text" class="form-control search-bar" placeholder="Name" aria-describedby="service-customer-name">
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <h4>Phone Number</h4>
+        <div class="input-group col-lg-12">
+            <input type="text" class="form-control search-bar" placeholder="Phone number" aria-describedby="service-customer-phone">
+        </div>
+    </div>
 
 <div class="row submit-button">
     <div class="col-lg-6">
-        <button type="button" class="btn btn-success">Submit</button>
+        <button type="button" style="margin-top: 20px;" class="btn btn-success" ng-click="partsService(partsServiceInfo)"> Submit</button>
     </div>
 </div>
 
