@@ -57,6 +57,21 @@
     </nav>
   </header>
   <div class="art-sheet clearfix">
+    
+
+    <script>
+        function initMap() {
+            var uluru = {lat: -25.363, lng: 131.044};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
     <div ng-view></div>
 
     <footer class="art-footer">
@@ -92,6 +107,7 @@
 <script src="app/js/controllers/OffersController.js"></script>
 <script src="app/js/controllers/AccessoriesController.js"></script>
 <script src="app/js/controllers/PartsAndServiceController.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA9nEXWukANlT4WQ7Fcr_L-gX3HZxLCvXU&sensor=false&extension=.js"></script>
 
 </body>
 </html>
