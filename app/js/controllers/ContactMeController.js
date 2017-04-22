@@ -6,7 +6,10 @@ angular.module('myApp.controllers')
         navService.setActiveTab("contactme");
 
         $scope.contactinfo = {
-            FirstName: ''
+            FirstName: '',
+            LastName: '',
+            PhoneNumber: '',
+            Email: ''
         };
         $scope.contactMe = function(widget){
             var modalInstance = $modal.open({

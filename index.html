@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
   <script src="bower_components/angular/angular.js"></script>
 
-  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+  <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
   <script src="bower_components/angular-resource/angular-resource.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
@@ -57,6 +57,21 @@
     </nav>
   </header>
   <div class="art-sheet clearfix">
+
+
+    <script>
+        function initMap() {
+            var uluru = {lat: -25.363, lng: 131.044};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
     <div ng-view></div>
 
     <footer class="art-footer">
@@ -92,6 +107,7 @@
 <script src="app/js/controllers/OffersController.js"></script>
 <script src="app/js/controllers/AccessoriesController.js"></script>
 <script src="app/js/controllers/PartsAndServiceController.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9nEXWukANlT4WQ7Fcr_L-gX3HZxLCvXU&sensor=false&extension=.js"></script>
 
 </body>
 </html>
