@@ -5,11 +5,18 @@
             <img width="125" height="125" alt="" src="app/img/top4.png" class="">
         </div>
         <div class="col-lg-6" style="width: 85%;">
-            <h3>Please provide us with the information below and choose submtit.</h3>
+            <h3>Please provide us with the information below and choose submit.</h3>
             <div class="panel-body" style="width: 74%">
                 <div class="row">
                     <div class="form-group">
-                        <label>First Name</label><input name="total" ng-model="contactinfo.FirstName" class="form-control" ng-required>
+                        <ng-form name="contactform" novalidate>
+                            <label><font color="red">*</font>First Name</label><input name="total" ng-model="contactinfo.FirstName" class="form-control" ng-required="true">
+                            <label>Last Name</label><input name="total" ng-model="contactinfo.LastName" class="form-control" ng-required>
+                            <label><font color="red">*</font>Phone Number</label><input name="total" ng-model="comtactinfo.PhoneNumber" class="form-control" ng-required="true">
+                            <label><font color="red">*</font>Email</label><input name="total" ng-model="contactinfo.Email" class="form-control" ng-required="true">
+                            <h4><font color="red">* indicates required information.</font></h4>
+                            <p style="text-align:center;"><button type="button" class="btn btn-success" ng-disabled="contactform.$invalid" ng-click="contactMe(contactinfo)">Submit</button></p>
+                        </ng-form>
                     </div>
                 </div>
             </div>
@@ -17,4 +24,3 @@
     </div>
 </div>
 
-    <p style="text-align:center;"><button type="button" class="btn btn-success" ng-click="contactMe(contactinfo)">Submit</button></p>
